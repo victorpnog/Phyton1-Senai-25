@@ -1,5 +1,5 @@
 #Uso do print e operações matemáticas
-
+'''
 print('Bem vindo ao Senai')
 print(2+6)
 print(100-12)
@@ -26,3 +26,26 @@ lanche = int(input('\n\nDigite o valor do lanche: R$ '))
 suco = int(input('Digite o valor do suco: R$ '))
 valor_total_lanche = lanche + suco
 print(f'\nO valor da refeição foi: R${valor_total_lanche}')
+'''
+
+#String
+nome = 'Luis Eulalio'
+
+#Fatiamento
+print(nome[0])
+print(nome[1:5])
+print(nome[1:5:2])
+
+#Análise
+print(len(nome))
+print(nome.count('l'))
+print(nome.find('l'))
+
+#Transformação
+nome = input('Nome: ').strip()
+print(nome)
+print(nome.upper())
+print(nome.lower())
+print(nome.replace('L','P'))
+
+

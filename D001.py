@@ -19,7 +19,7 @@ print(f'\nA aceleração é: {aceleracao} m/s^2')
 velocidade = velocidade_inicial + aceleracao * delta_tempo
 
 #formula final da posição do Movimento Retilíneo Uniformemente Variado (MRUV)
-formula_posicao = 0 + velocidade_inicial * delta_tempo + ((aceleracao * delta_tempo **2)/2)
+formula_posicao = 0 + velocidade_inicial * delta_tempo + (aceleracao * delta_tempo**2))/2
 
 '''
 #saída da velocidade inicial / aceleração / da posição do móvel /
