@@ -27,7 +27,7 @@ suco = int(input('Digite o valor do suco: R$ '))
 valor_total_lanche = lanche + suco
 print(f'\nO valor da refeição foi: R${valor_total_lanche}')
 
-'''
+
 #String
 nome = 'Luis Eulalio'
 
@@ -36,7 +36,7 @@ nome = 'Luis Eulalio'
 print(nome[0])
 print(nome[1:5])
 print(nome[1:5:2])
-'''
+
 #Análise
 print(len(nome)) #aqui vai contar tudo
 print(nome.count('l')) #aqui vai contar a quantidade dessa letra
@@ -49,3 +49,24 @@ print(nome.upper())
 print(nome.lower())
 print(nome.replace('L','P'))
 '''
+
+#Condicionais
+
+#1
+altura = float(input('Altura: '))
+
+if altura > 1.5:
+    print('Pode andar no brinquedo')
+else:
+    print('Quem sabe o ano que vem!')
+
+#2
+altura = float(input('Altura: '))
+
+if altura > 2:
+    print('Cuidado! Vai bater a cabeça')
+elif altura < 1.5:
+    print('Quem sabe ano que vem!')
+else:
+    print('Pode andar no brinquedo')
+    
