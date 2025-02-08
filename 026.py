@@ -35,7 +35,7 @@ elif sexo == 2:
     elif imc >= 16:
         print('\nMagreza')
     elif imc <16 and imc >= 0:
-        print('\nMagreza')
+        print('\nMagreza Grave')
     else:
         print('Tem algum erro no seu peso e/ou altura!')
 
