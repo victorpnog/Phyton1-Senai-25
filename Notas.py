@@ -48,7 +48,7 @@ print(nome)
 print(nome.upper())
 print(nome.lower())
 print(nome.replace('L','P'))
-'''
+
 
 #Condicionais
 
@@ -69,4 +69,20 @@ elif altura < 1.5:
     print('Quem sabe ano que vem!')
 else:
     print('Pode andar no brinquedo')
-    
+'''
+
+#Estruturas de repetição
+
+# for simples
+
+for x in range (0,10):
+    print(x)
+
+for x in range (10, 0, -1):
+    print (x)
+
+soma = 0
+for x in range (0,10):
+    numero = int(input('Digite um numero: '))
+    soma = soma + numero
+print(soma)
