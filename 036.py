@@ -1,19 +1,24 @@
 #Escreva um programa que leia o peso de 7 pessoas, e no final, mostre qual foi o maior e o menor peso lidos
 
-maior_peso = 0
-menor_peso = 1000
+maior_peso = None
+menor_peso = None
 
-for leitura in range (1,8):
-    peso = float(input('Digite seu peso: '))
-    print("_________________")
-    if maior_peso < peso:
-        maior_peso = peso
-    else:
-        0
-    if menor_peso > peso:
-        menor_peso = peso
-    else:
-        0
+#leitura de dados
+for i in range(1, 8):
+    peso = float(input(f'Digite o peso da {i}ª pessoa (kg): '))
 
-print (f' O maior peso é: {maior_peso} kgs'
-       f'\n O menor peso é: {menor_peso} kgs')
+    #processamento
+    if maior_peso is None or menor_peso is None:
+        maior_peso = menor_peso = peso
+    else:
+        # Atualiza o maior peso
+        if peso > maior_peso:
+            maior_peso = peso
+        # Atualiza o menor peso
+        if peso < menor_peso:
+            menor_peso = peso
+
+#impressão
+print("\nResumo dos pesos:")
+print(f"Maior peso registrado: {maior_peso:.2f} kg")
+print(f"Menor peso registrado: {menor_peso:.2f} kg")
