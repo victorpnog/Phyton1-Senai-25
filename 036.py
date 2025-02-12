@@ -1,7 +1,7 @@
 #Escreva um programa que leia o peso de 7 pessoas, e no final, mostre qual foi o maior e o menor peso lidos
 
 maior_peso = 0
-menor_peso = 100000
+menor_peso = 1000
 
 for leitura in range (1,8):
     peso = float(input('Digite seu peso: '))
