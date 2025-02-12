@@ -2,14 +2,16 @@
 
 #leitura de dados
 print('---------------------------')
-print('Descubra se é par ou ímpar!')
-numero1 = int(input('\nDigite o primeiro número: '))
-numero2 = int(input('Digite o segundo número: '))
+print('Número pares entre dois números!')
+inicio = int(input('\nDigite o primeiro número: '))
+fim = int(input('Digite o segundo número: '))
 
 #processamento
-for numero in range (numero1, numero2+1):
-    resultado = numero % 2 == 0
-    if resultado == True:
-        print(f'{numero} é Par')
-    else:
-        print(f'{numero} é Ímpar')
+if inicio > fim:
+    for x in range(fim, inicio +1):
+        if x % 2 == 0:
+            print(x)
+else:
+    for x in range (inicio, fim + 1):
+        if x % 2 == 0:
+            print(x)

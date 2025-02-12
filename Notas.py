@@ -69,7 +69,7 @@ elif altura < 1.5:
     print('Quem sabe ano que vem!')
 else:
     print('Pode andar no brinquedo')
-'''
+
 
 #Estruturas de repetição
 
@@ -86,3 +86,33 @@ for x in range (0,10):
     numero = int(input('Digite um numero: '))
     soma = soma + numero
 print(soma)
+'''
+
+import time
+
+contador = 0
+
+while contador < 100:
+    time.sleep (0.5)
+    print(contador)
+    contador = 1
+
+contador = 0
+resposta = 'S'
+
+while resposta != 'N':
+    contador +=1
+    print(f'Contando {contador}')
+    resposta = input('Quer continuar? [S/N]: ').upper().strip()[0]
+
+    opcao = 0
+
+    while opcao != 5:
+        opcao = int(input('O que deseja? '
+                          '\n1. Mostrar nome'
+                          '\n2. Somar'
+                          '\n5. Sair: '))
+
+    if opcao == 1:
+        nome = input('Nome: ')
+        print(f'Seu nome é {nome}')
